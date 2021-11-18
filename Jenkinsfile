@@ -25,7 +25,7 @@ pipeline {
 
     stage('Archive'){
                 steps{
-			dir('C:\Users\Moe\Desktop\SSTU\Администрирование'){
+			dir('C:\\'){
 				echo "Current build: ${BUILD_NUMBER}"
 				zip zipFile: "${BUILD_NUMBER}.zip", archive:false, dir: 'Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\reverse-int'
 				archiveArtifacts artifacts: "${BUILD_NUMBER}.zip"
