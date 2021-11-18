@@ -27,7 +27,7 @@ pipeline {
                 steps{
 			dir('C:\\'){
 				echo "Current build: ${BUILD_NUMBER}"
-				zip zipFile: "${BUILD_NUMBER}.zip", archive:false, dir: 'ProgramData\\Jenkins\\.jenkins\\workspace\\typical-arrays-problems'
+				zip zipFile: "${BUILD_NUMBER}.zip", archive:false, dir: 'Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\job'
 				archiveArtifacts artifacts: "${BUILD_NUMBER}.zip"
 			}
 		  }
