@@ -50,7 +50,7 @@ pipeline {
   post {
 	  always{
 		emailext attachLog: true, body: '''$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
-		Check console output at $BUILD_URL to view the results. ${JELLY_SCRIPT, template="html"}''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!', to: 'vitya14022001@mail.ru'
+		Check console output at $BUILD_URL to view the results. ${JELLY_SCRIPT, template="html"}''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!', to: 'lmidorunl@gmail.com'
 	  }
           cleanup {
               cleanWs()
