@@ -8,7 +8,7 @@ exports.min = function min (array) {
       min = v;
     }
   }
-  return min;
+  return 0;
 }
 
 exports.max = function max (array) {
